@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1001,
+		"title": "ice blueberry",
+		"itemsInBox": 6,
+		"weight": 100,
+		"price": 300,
+		"imgSrc": "coal.png"
+	},
+	{
+		"id": 10002,
+		"title": "Калифорния темпура",
+		"itemsInBox": 6,
+		"weight": 100,
+		"price": 50,
+		"imgSrc": "coal.png"
+	},
+	{
+		"id": 1003,
+		"title": "Запеченый ролл «Калифорния»",
+		"itemsInBox": 6,
+		"weight": 50,
+		"price": 100,
+		"imgSrc": "coal.png"
+	},
+	{
+		"id": 10004,
+		"title": "Филадельфия",
+		"itemsInBox": 6,
+		"weight": 50,
+		"price": 100,
+		"imgSrc": "coal.png"
+	}
+]
