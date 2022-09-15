@@ -47,14 +47,13 @@ window.addEventListener('click', function (event) {
 			weight: card.querySelector('.price__weight').innerText,
 			price: card.querySelector('.price__currency').innerText,
 			counter: card.querySelector('[data-counter]').innerText,
-			postavshik: card.querySelector('.postavshik').innerText,
 		};
 		sum = productInfo.price;
 		summ = productInfo.counter;
 		summm = summ*sum;
 		summmm = summmm + summm;
 		console.log(summmm);
-        n =  n + "\n" + " id: " + productInfo.id +"\n"+ " Название: " + productInfo.title +"\n"+ " Граммовка: " + productInfo.weight +"\n"+ " Цена: " + productInfo.price +"\n"+ " Количество: " + productInfo.counter +"\n" + " Поставщик: "+ productInfo.postavshik +"\n";
+        n =  n + "\n" + " id: " + productInfo.id +"\n"+ " Название: " + productInfo.title +"\n"+ " Граммовка: " + productInfo.weight +"\n"+ " Цена: " + productInfo.price +"\n"+ " Количество: " + productInfo.counter +"\n";
     
 		// Отобразим товар в корзине
 		// Проверять если ли уже такой товар в корзине
