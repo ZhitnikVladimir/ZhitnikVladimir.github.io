@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/humburger.css">
 <link rel="stylesheet" href="css/style.min.css">
     <title>Grid</title>
   </head>
@@ -20,6 +21,7 @@
           <section class="header">
             <div class="intro__content_wrapp">
               <a href="index.html"><img src="./img/medusa.png" alt="" class="intro__content_img"></a>
+              
               <ul class="intro__content_ul">
                 <li class="intro__content_li"><a href="product.html">ТОВАР</a></li>
                 <li class="intro__content_li"><a href="">ОТЗЫВЫ</a></li>
@@ -30,6 +32,18 @@
           </section>
           
         </div>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="product.html">ТОВАР</a></li>
+            <li><a class="menu__item" href="tets.html">ОТЗЫВЫ</a></li>
+            <li><a class="menu__item" href="#">КОНТАКТЫ</a></li>
+            <li><a class="menu__item" href="#">БЛОГ</a></li>
+          </ul>
+          </div>
         <div class="grid-containe">
 
           
@@ -48,6 +62,18 @@
         <section class="header header_active">
           <div class="intro__content_wrapp">
             <a href="index.html"><img src="./img/medusa.png" alt="" class="intro__content_img"></a>
+            <div class="hamburger-menuu">
+              <input id="menu__togglee" type="checkbox" />
+              <label class="menu__btnn" for="menu__togglee">
+                <span></span>
+              </label>
+              <ul class="menu__boxx">
+                <li><a class="menu__itemm" href="product.html">ТОВАР</a></li>
+                <li><a class="menu__itemm" href="tets.html">ОТЗЫВЫ</a></li>
+                <li><a class="menu__itemm" href="#">КОНТАКТЫ</a></li>
+                <li><a class="menu__itemm" href="#">БЛОГ</a></li>
+              </ul>
+              </div>
             <ul class="intro__content_ul">
               <li class="intro__content_li"><a href="product.html" class="black">ТОВАР</a></li>
               <li class="intro__content_li"><a href="" class="black">ОТЗЫВЫ</a></li>
@@ -56,6 +82,7 @@
             </ul>
           </div>
         </section>
+        
         <ul class="catalog__tabs catalog__tabs_active">
             <li class="catalog__tab"><div class="">Табак</div></li>
             <li class="catalog__tab"><div class="">Уголь</div></li>
@@ -63,13 +90,14 @@
             <li class="catalog__tab pt"><div class="">Одноразовые сигареты</div></li>
             <li class="catalog__tab pt"><div class="">Подарочные коробки</div></li>
         </ul>
+        
         <!--Табак-->
         <div class="group">
           <!--Бренды Табаков-->
         <div class="grid-container">
                 <div class="grid-elementt"> 
                   <img src="./img/Tabaco/unity100/tabak-unity-berry-jelly-500x500.jpg" alt="" class="manufacturer">
-                  <p class="title">Табак unity2.0 100грам</p>
+                  <p class="title">Табак unity2.0</p>
                   <button class="minibtn">Ассортимент</button>
                 </div>
                   <div class="grid-elementt"> 
@@ -78,25 +106,30 @@
                     <button class="minibtn">Ассортимент</button>
                   </div>
                   <div class="grid-elementt"> 
-                    <img src="./img/Tabaco/Serbetli/rotana.jpg" alt="" class="manufacturer">
-                    <p class="title">Tabaco Serbetli</p>
+                    <img src="./img/Tabaco/unity250/tabak-unity-citrus-spitz-500x500.jpg" alt="" class="manufacturer">
+                    <p class="title">Tabaco Unity 250</p>
                     <button class="minibtn">Ассортимент</button>
                   </div>
                   <div class="grid-elementt"> 
-                    <img src="./img/tabac.png" alt="" class="manufacturer">
-                    <p class="title">Tabaco Jibiar</p>
+                    <img src="./img/Tabaco/swipe/Beznikotinovaya-Smesy-Swipe-Mango-Orange-Mint-Mango-Apelysin-Myata-50-gr.jpg" alt="" class="manufacturer">
+                    <p class="title">Tabaco Swipe</p>
                     <button class="minibtn">Ассортимент</button>
                   </div>
                   <div class="grid-elementt"> 
-                    <img src="./img/tabac.png" alt="" class="manufacturer">
-                    <p class="title">Tabaco Jibiar</p>
+                    <img src="./img/Tabaco/dark/Tabak-Dark-Side-Bounty-Hanter-500x704.jpg" alt="" class="manufacturer">
+                    <p class="title">Tabaco DarkSide</p>
+                    <button class="minibtn">Ассортимент</button>
+                  </div>
+                  <div class="grid-elementt"> 
+                    <img src="./img/Tabaco/smokeangel/tabak-smoke-angels-desert-corn-angely-dyma-desertnaya-kukuruza-100g.jpg" alt="" class="manufacturer">
+                    <p class="title">Tabaco DarkAngle</p>
                     <button class="minibtn">Ассортимент</button>
                   </div>
                   <button class="basket_shop">
                     <img src="./img/basket.png" alt="">
                   </button>
             </div>
-            <!-- Вкусы Jbiar-->
+            <!-- Вкусы unity150-->
             <div class="grid-tovar_jibiar grid-tovar_jibiar_active">
                 <div class="grid-element" id="Unity">  </div>
                   <button class="undo">
@@ -107,7 +140,7 @@
                   </button>
               
           </div>
-          <!--Вкусы Daim-->
+          <!--Вкусы buda-->
           <div class="grid-tovar_jibiar grid-tovar_jibiar_active">
               <div class="grid-element" id="Buda"></div>
                 <button class="undo">
@@ -119,10 +152,10 @@
             </div>
             
         
-          <!--Вкусы Serbetli-->
+          <!--Вкусы Unity250-->
           <div class="grid-tovar_jibiar grid-tovar_jibiar_active">
 
-            <div class="grid-element" id="Serb">
+            <div class="grid-element" id="Unityy">
             </div>
             <button class="undo">
               <img src="./img/undo.png" alt="">
@@ -131,7 +164,36 @@
               <img src="./img/basket.png" alt="">
             </button>
           </div>
-          
+          <!--Вкусы swipe-->
+          <div class="grid-tovar_jibiar grid-tovar_jibiar_active">
+            <div class="grid-element" id="Swipe"></div>
+              <button class="undo">
+                <img src="./img/undo.png" alt="">
+              </button>
+              <button class="basket_shop">
+                <img src="./img/basket.png" alt="">
+              </button>
+          </div>
+          <!--Вкусы darkside-->
+          <div class="grid-tovar_jibiar grid-tovar_jibiar_active">
+            <div class="grid-element" id="Dark"></div>
+              <button class="undo">
+                <img src="./img/undo.png" alt="">
+              </button>
+              <button class="basket_shop">
+                <img src="./img/basket.png" alt="">
+              </button>
+          </div>
+          <!--Вкусы DarkDarkAngle-->
+          <div class="grid-tovar_jibiar grid-tovar_jibiar_active">
+            <div class="grid-element" id="DarkAngle"></div>
+              <button class="undo">
+                <img src="./img/undo.png" alt="">
+              </button>
+              <button class="basket_shop">
+                <img src="./img/basket.png" alt="">
+              </button>
+          </div>
         </div>
         <!--Уголь-->
          <div class="group">
@@ -661,9 +723,9 @@
                   <div id="order-form" class="card-body border-top none">
                     <h5 class="card-title">Оформить заказ</h4>
                     <form class="telegram-form">
-                      <input type="text" name="name" placeholder="Имя и фамилия" autocomplete="off" />
+                      <input type="text" name="name" class="form-control" placeholder="Имя и фамилия" autocomplete="off" />
                       <input type="text" name="phone" class="form-control" placeholder="Ваш номер телефона">
-                      <button type="submit" class="get-items-length">Заказать</button>
+                      <button type="submit" class="get-items-length zakaz">Заказать</button>
                     </form>
                   </div>
                   <!-- // Оформить заказ -->
