@@ -47,6 +47,7 @@ window.addEventListener('click', function (event) {
 			weight: card.querySelector('.price__weight').innerText,
 			price: card.querySelector('.price__currency').innerText,
 			counter: card.querySelector('[data-counter]').innerText,
+			
 		};
 		sum = productInfo.price;
 		summ = productInfo.counter;

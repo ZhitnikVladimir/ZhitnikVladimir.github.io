@@ -1,6 +1,9 @@
-const Jibi = document.querySelector('#Unity');
-const Dai = document.querySelector('#Buda');
-const Serb = document.querySelector('#Serb');
+const Unity = document.querySelector('#Unity');
+const Buda = document.querySelector('#Buda');
+const Unityy = document.querySelector('#Unityy');
+const Swipe = document.querySelector('#Swipe');
+const Darkside = document.querySelector('#Dark');
+const DarkAngle = document.querySelector('#DarkAngle');
 // Запускаем getProducts
 getProducts();
 
@@ -58,7 +61,7 @@ function renderProducts(productsArray) {
 								
 						</div>
 					</div>`;
-        Jibi.insertAdjacentHTML('beforeend', productHTML);
+				Unity.insertAdjacentHTML('beforeend', productHTML);
 		}
 		if (item.name == "Buta") {
 			const productHTML = `<div class="${item.name}">
@@ -67,7 +70,7 @@ function renderProducts(productsArray) {
 								<img class="product-img" src="img/Tabaco/buda/${item.imgSrc}" alt="">
 								<div class="card-body text-center">
 									<h4 class="item-title">${item.title}</h4>
-									<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small></p>
+									<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small><button data-info class="btninfo">i</button></p>
 	
 									<div class="details-wrapper">
 	
@@ -82,6 +85,7 @@ function renderProducts(productsArray) {
 										<div class="price">
 											<div class="price__weight">${item.weight}г.</div>
 											<div class="price__currency">${item.price}</div>
+											<div class="price__grn">грн</div>
 										</div>
 									</div>
 									
@@ -92,15 +96,15 @@ function renderProducts(productsArray) {
 								</div>
 							</div>
 						</div>`;
-			Dai.insertAdjacentHTML('beforeend', productHTML);
+				Buda.insertAdjacentHTML('beforeend', productHTML);
 			}
-			if (item.name == "Serbetli") {
+			if (item.name == "Unityy") {
 				const productHTML = `<div class="${item.name}">
 								<div class="card" data-id="${item.id}">
-									<img class="product-img" src="img/Tabaco/Serbetli/${item.imgSrc}" alt="">
+									<img class="product-img" src="img/Tabaco/unity250/${item.imgSrc}" alt="">
 									<div class="card-body text-center">
 										<h4 class="item-title">${item.title}</h4>
-										<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small></p>
+										<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small><button data-info class="btninfo">i</button></p>
 		
 										<div class="details-wrapper">
 		
@@ -115,6 +119,7 @@ function renderProducts(productsArray) {
 											<div class="price">
 												<div class="price__weight">${item.weight}г.</div>
 												<div class="price__currency">${item.price}</div>
+												<div class="price__grn">грн</div>
 											</div>
 										</div>
 										
@@ -125,8 +130,137 @@ function renderProducts(productsArray) {
 									</div>
 								</div>
 							</div>`;
-				Serb.insertAdjacentHTML('beforeend', productHTML);
+							Unityy.insertAdjacentHTML('beforeend', productHTML);
 				}
+				if (item.name == "Swipe") {
+					const productHTML = `<div class="${item.name}">
+									<div class="postavshik">${item.postavshik}</div>
+									<div class="card" data-id="${item.id}">
+										<img class="product-img" src="img/Tabaco/swipe/${item.imgSrc}" alt="">
+										<div class="card-body text-center">
+											<h4 class="item-title">${item.title}</h4>
+											<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small><button data-info class="btninfo">i</button></p>
+			
+											<div class="details-wrapper">
+			
+												<!-- Счетчик -->
+												<div class="items counter-wrapper">
+													<div class="items__control" data-action="minus">-</div>
+													<div class="items__current" data-counter>1</div>
+													<div class="items__control" data-action="plus">+</div>
+												</div>
+												<!-- // Счетчик -->
+			
+												<div class="price">
+													<div class="price__weight">${item.weight}г.</div>
+													<div class="price__currency">${item.price}</div>
+													<div class="price__grn">грн</div>
+												</div>
+											</div>
+											
+											<button data-cart type="button" id="modalclick" class="btn btn-block btn-outline-warning">
+												+ в корзину
+											</button>
+											
+										</div>
+									</div>
+									
+									<div class="infocard infocard_active">
+											<div class="ingh">${item.descr}</div>
+											<button type="button" class="btnback">
+												Назад
+											</button>
+											
+									</div>
+								</div>`;
+							Swipe.insertAdjacentHTML('beforeend', productHTML);
+					}
+					if (item.name == "Darkside") {
+						const productHTML = `<div class="${item.name}">
+										<div class="postavshik">${item.postavshik}</div>
+										<div class="card" data-id="${item.id}">
+											<img class="product-img" src="img/Tabaco/dark/${item.imgSrc}" alt="">
+											<div class="card-body text-center">
+												<h4 class="item-title">${item.title}</h4>
+												<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small><button data-info class="btninfo">i</button></p>
+				
+												<div class="details-wrapper">
+				
+													<!-- Счетчик -->
+													<div class="items counter-wrapper">
+														<div class="items__control" data-action="minus">-</div>
+														<div class="items__current" data-counter>1</div>
+														<div class="items__control" data-action="plus">+</div>
+													</div>
+													<!-- // Счетчик -->
+				
+													<div class="price">
+														<div class="price__weight">${item.weight}г.</div>
+														<div class="price__currency">${item.price}</div>
+														<div class="price__grn">грн</div>
+													</div>
+												</div>
+												
+												<button data-cart type="button" id="modalclick" class="btn btn-block btn-outline-warning">
+													+ в корзину
+												</button>
+												
+											</div>
+										</div>
+										
+										<div class="infocard infocard_active">
+												<div class="ingh">${item.descr}</div>
+												<button type="button" class="btnback">
+													Назад
+												</button>
+												
+										</div>
+									</div>`;
+								Dark.insertAdjacentHTML('beforeend', productHTML);
+						}
+						if (item.name == "DarkAngle") {
+							const productHTML = `<div class="${item.name}">
+											<div class="postavshik">${item.postavshik}</div>
+											<div class="card" data-id="${item.id}">
+												<img class="product-img" src="img/Tabaco/smokeangel/${item.imgSrc}" alt="">
+												<div class="card-body text-center">
+													<h4 class="item-title">${item.title}</h4>
+													<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт. в наявності</small><button data-info class="btninfo">i</button></p>
+					
+													<div class="details-wrapper">
+					
+														<!-- Счетчик -->
+														<div class="items counter-wrapper">
+															<div class="items__control" data-action="minus">-</div>
+															<div class="items__current" data-counter>1</div>
+															<div class="items__control" data-action="plus">+</div>
+														</div>
+														<!-- // Счетчик -->
+					
+														<div class="price">
+															<div class="price__weight">${item.weight}г.</div>
+															<div class="price__currency">${item.price}</div>
+															<div class="price__grn">грн</div>
+														</div>
+													</div>
+													
+													<button data-cart type="button" id="modalclick" class="btn btn-block btn-outline-warning">
+														+ в корзину
+													</button>
+													
+												</div>
+											</div>
+											
+											<div class="infocard infocard_active">
+													<div class="ingh">${item.descr}</div>
+													<button type="button" class="btnback">
+														Назад
+													</button>
+													
+											</div>
+										</div>`;
+									DarkAngle.insertAdjacentHTML('beforeend', productHTML);
+							}
     });
 
 }
