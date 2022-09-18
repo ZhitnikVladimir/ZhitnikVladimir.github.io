@@ -33,9 +33,9 @@ function renderProducts(productsArray) {
 
 									<!-- Счетчик -->
 									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
+										<button class="items__control" data-action="minus">-</button>
 										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
+										<button class="items__control" data-action="plus">+</button>
 									</div>
 									<!-- // Счетчик -->
 
@@ -76,9 +76,9 @@ function renderProducts(productsArray) {
 	
 										<!-- Счетчик -->
 										<div class="items counter-wrapper">
-											<div class="items__control" data-action="minus">-</div>
+											<button class="items__control" data-action="minus">-</button>
 											<div class="items__current" data-counter>1</div>
-											<div class="items__control" data-action="plus">+</div>
+											<button class="items__control" data-action="plus">+</button>
 										</div>
 										<!-- // Счетчик -->
 	
@@ -110,9 +110,9 @@ function renderProducts(productsArray) {
 		
 											<!-- Счетчик -->
 											<div class="items counter-wrapper">
-												<div class="items__control" data-action="minus">-</div>
+												<button class="items__control" data-action="minus">-</button>
 												<div class="items__current" data-counter>1</div>
-												<div class="items__control" data-action="plus">+</div>
+												<button class="items__control" data-action="plus">+</button>
 											</div>
 											<!-- // Счетчик -->
 		
@@ -145,9 +145,9 @@ function renderProducts(productsArray) {
 			
 												<!-- Счетчик -->
 												<div class="items counter-wrapper">
-													<div class="items__control" data-action="minus">-</div>
+													<button class="items__control" data-action="minus">-</button>
 													<div class="items__current" data-counter>1</div>
-													<div class="items__control" data-action="plus">+</div>
+													<button class="items__control" data-action="plus">+</button>
 												</div>
 												<!-- // Счетчик -->
 			
@@ -188,9 +188,9 @@ function renderProducts(productsArray) {
 				
 													<!-- Счетчик -->
 													<div class="items counter-wrapper">
-														<div class="items__control" data-action="minus">-</div>
+														<button class="items__control" data-action="minus">-</button>
 														<div class="items__current" data-counter>1</div>
-														<div class="items__control" data-action="plus">+</div>
+														<button class="items__control" data-action="plus">+</button>
 													</div>
 													<!-- // Счетчик -->
 				
@@ -231,9 +231,9 @@ function renderProducts(productsArray) {
 					
 														<!-- Счетчик -->
 														<div class="items counter-wrapper">
-															<div class="items__control" data-action="minus">-</div>
+															<button class="items__control" data-action="minus">-</button>
 															<div class="items__current" data-counter>1</div>
-															<div class="items__control" data-action="plus">+</div>
+															<button class="items__control" data-action="plus">+</button>
 														</div>
 														<!-- // Счетчик -->
 					
